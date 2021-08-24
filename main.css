@@ -1,0 +1,88 @@
+@import "button.css";
+@import "navbar.css";
+
+:root {
+    --primary: #405060;
+    --primary-text: #F7FBFF;
+    --primary-shadow: #203040;
+
+    --active: #4080E0;
+    --active-text: #DFEFFF;
+    --active-shadow: #204070;
+
+    --shadow: #484848;
+    --shadow-light: #686868;
+
+    --page: #EFEFEF;
+    --box: #DFDFDF;
+    --disabled: #C0C0C0;
+
+    --smaller: 2px;
+    --small: 4px;
+    --medium: 8px;
+    --large: 16px;
+    --larger: 32px;
+
+    --button-size: 128px
+}
+
+
+* {
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+
+[disabled] {
+    color: var(--disabled) !important;
+    pointer-events: none !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: var(--small);
+    margin-bottom: var(--large);
+}
+
+h1 {font-size: xx-large;}
+h2 {font-size: x-large;}
+h3 {font-size: larger;}
+h4 {font-size: large;}
+h5 {font-size: medium;}
+h6 {font-size: small;}
+
+small {font-size: smaller;}
+
+body {
+    margin: 0;
+    background-color: var(--page);
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+}
+
+main {
+    height: 100%;
+}
+
+
+.box, .box-fluid {
+    max-width: 50%;
+    border-radius: var(--small);
+    background-color: var(--box);
+}
+.box-fluid {  
+    max-width: 100%;
+}
+
+
+.title {
+    font-size: calc(var(--larger) + var(--medium));
+    padding: var(--medium);
+
+    margin: 0;
+}
+
+

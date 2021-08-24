@@ -1,0 +1,50 @@
+@import "spaces.css";
+@import "alert.css";
+@import "menu.css";
+
+
+.shadow {
+    box-shadow: 0 0 8px var(--shadow);
+}
+.shadow-light {
+    box-shadow: 0 0 4px var(--shadow-light);
+}
+
+
+.border {
+    border: 1px solid var(--primary);
+}
+
+
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.flex.columns {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.flex.content-start {justify-content: flex-start;}
+.flex.content-center {justify-content: center;}
+.flex.content-end {justify-content: flex-end;}
+.flex.content-stretch {justify-content: stretch;}
+
+
+
+
+.element {
+    padding: var(--medium);
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: var(--box);
+
+    width: min-content;
+    height: min-content;
+}
+
+
+.date {
+    float: right;
+}

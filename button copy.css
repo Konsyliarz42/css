@@ -1,0 +1,51 @@
+button {
+    min-width: 128px;
+    min-height: 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+    transition: 0.5s;
+}
+button.block {
+    display: block;
+    width: 100%;
+}
+button.small {
+    min-width: 64px;
+    min-height: 16px;
+    font-size: small;
+}
+
+
+.button-group > button {
+    border-radius: 0;
+    float: left;
+}
+.button-group > button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.button-group > button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+
+
+.button {
+    color: #DFEFFF;
+    background-color: #4080E0;
+}
+.button:hover {
+    box-shadow: 0 0 4px #204070;
+    background-color: #204070;
+}
+
+
+.link {
+    min-width: 64px;
+    font-weight: bold;
+    color: #4080E0;
+    background-color: transparent;
+}
+.link:hover {
+    text-shadow: 0 0 2px #204070;
+}

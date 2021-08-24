@@ -1,0 +1,84 @@
+nav {
+    padding-bottom: var(--larger);
+    margin-bottom: var(--larger);
+
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+nav > .navbar, nav > .subnav, nav > .subnav-addon  {
+    background-color: var(--primary);
+    color: var(--primary-text);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 32px;
+}
+
+nav > .subnav, nav > .subnav-addon {
+    top: var(--larger);
+
+    float: right;
+    width: max-content;
+    background-color: transparent;
+
+    max-width: 40%;
+}
+nav > .subnav::before {
+    border-top: var(--larger) solid var(--primary);
+    border-left: calc(var(--larger)*2) solid var(--box);
+
+    content: '';
+}
+
+nav > .subnav-addon {
+    color: black;
+
+    align-items: center;
+}
+nav > .subnav-addon::before {
+    border-top: var(--larger) solid var(--box);
+    border-left: calc(var(--larger)*2) solid transparent;
+
+    content: '';
+}
+nav > .subnav-addon > div {
+    background-color: var(--box);
+    padding-right: var(--medium);
+
+    display: flex;
+    align-items: center;
+}
+nav > .subnav-addon > div:last-child {
+    padding-right: 0;
+}
+
+
+nav > .navbar > a, nav > .subnav > a {
+    background-color: var(--primary);
+    color: var(--primary-text);
+    min-width: var(--button-size);
+    padding: calc(var(--medium) - 1px);
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.5s;
+}
+nav > .navbar > a:not(.active):hover, nav > .subnav > a:not(.active):hover {
+    background-color: var(--primary-shadow);
+}
+
+nav > .navbar > a.active, nav > .subnav > a.active {
+    background-color: var(--active);
+    color: var(--active-text);
+}
+
+nav hr {
+    border: none;
+}

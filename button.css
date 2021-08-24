@@ -1,0 +1,40 @@
+.button, .button-small, .button-block {
+    background-color: var(--active);
+    color: var(--active-text);
+
+    min-width: 128px;
+    min-height: var(--larger);
+    padding: var(--small) var(--medium);
+    border-radius: var(--small);
+    transition: 0.5s;
+
+    border: none;
+    font-size: medium;
+}
+.button:hover, .button-small:hover, .button-block:hover {
+    background-color: var(--active-shadow);
+    box-shadow: 0 0 4px var(--active-shadow);
+}
+
+
+.button-small {
+    min-width: min-content;
+    min-height: min-content;
+    font-size: smaller;
+}
+
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.button-close {
+    float: right;
+
+    z-index: 90;
+    transition: color 0.5s;
+}
+.button-close:hover {
+    color: var(--primary-shadow);
+}

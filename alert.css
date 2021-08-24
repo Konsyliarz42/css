@@ -1,0 +1,20 @@
+.box-alert {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    width: 20%;
+    left: 0;
+    bottom: 0;
+    padding: 1.25%;
+}
+
+.alert {
+    background-color: var(--primary);
+    color: var(--primary-text);
+    margin-top: var(--large);
+    padding: var(--medium);
+    border-radius: var(--small);
+
+    width: 100%;
+}

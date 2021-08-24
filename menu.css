@@ -1,0 +1,15 @@
+.box-menu {
+    float: right;
+    position: sticky;
+
+    top: calc(var(--larger)*3);
+    width: 20%;
+    padding: 0 1.25%;
+}
+
+.menu {
+    background-color: var(--primary);
+    color: var(--primary-text);
+    padding: var(--medium);
+    border-radius: var(--small);
+}
